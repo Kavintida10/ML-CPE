@@ -1,16 +1,24 @@
-# LAB 04: k-Nearest Neighbor (KNN) และการประยุกต์ใช้งาน KNN 
+# LAB 04: k-Nearest Neighbor (KNN) และการประยุกต์ใช้งาน KNN
 
 **รายวิชา:** Machine Learning (Sec 2, 1/2569)  
-**ผู้จัดทำ:** Kavintida Sukchom (GitHub: [@Kavintida10](https://github.com/Kavintida10)) 
+**ผู้จัดทำ:** นางสาวกวินธิดา สุขโฉม (รหัสนักศึกษา: 116710400602-4, Sec 2)  
+**GitHub:** [@Kavintida10](https://github.com/Kavintida10)
 
 ---
-โปรเจกต์นี้เป็นการศึกษาและประยุกต์ใช้อัลกอริทึม k-Nearest Neighbor (KNN) ในการจำแนกประเภทข้อมูล (Classification) รวมถึงการทดลองปรับค่าพารามิเตอร์ $k$ (Number of Neighbors) และการวัดระยะทาง (Distance Metrics) เพื่อเปรียบเทียบและประเมินประสิทธิภาพความแม่นยำของแบบจำลอง
+
+## 📌 บทนำ (Introduction)
+โปรเจกต์นี้เป็นการศึกษาและประยุกต์ใช้อัลกอริทึม **k-Nearest Neighbor (KNN)** ในการจำแนกประเภทข้อมูล (Classification) และ **K-Means Clustering** ในการจัดกลุ่มพฤติกรรมข้อมูล โดยใช้ชุดข้อมูล **Social Network Ads** รวมถึงการทดลองปรับค่าพารามิเตอร์ $k$ (Number of Neighbors) และการทำ Data Preprocessing เพื่อประเมินประสิทธิภาพความแม่นยำของแบบจำลอง
 
 ---
-## Dataset
-https://www.kaggle.com/datasets/rakeshrau/social-network-ads?resource=download
+
+## 📂 แหล่งที่มาของข้อมูล (Dataset)
+* **Dataset:** Social Network Ads Dataset  
+* **Link:** [Kaggle - Social Network Ads](https://www.kaggle.com/datasets/rakeshrau/social-network-ads?resource=download)
 
 ---
+
+## 📁 โครงสร้างโปรเจกต์ (Project Structure)
+
 ```text
 LAB04-KNN/
 ├── classification/
@@ -40,10 +48,3 @@ LAB04-KNN/
 │
 ├── requirements.txt                # รายการไลบรารีที่จำเป็นสำหรับโปรเจกต์
 └── link-data.txt                   # ลิงก์แหล่งที่มาของชุดข้อมูล
-```
----
-
-## 👤 จัดทำโดย
-* **ชื่อ-นามสกุล:** นางสาวกวินธิดา สุขโฉม
-* **Sec:** 2
-* **รหัสนักศึกษา:** 116710400602-4
