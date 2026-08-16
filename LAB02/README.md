@@ -21,7 +21,7 @@
 ## 📁 โครงสร้างโปรเจกต์ (Project Structure)
 
 ```text
-ML-LAB02/
+LAB02/
 ├── character_list.csv              # ไฟล์ชุดข้อมูลตัวละครโดราเอมอนจาก Kaggle
 ├── ML-LAB-02.ipynb                 # Jupyter Notebook บันทึกขั้นตอนการทดลองและโค้ดทั้งหมด
 ├── link-data.txt                   # ลิงก์แหล่งที่มาของชุดข้อมูล
