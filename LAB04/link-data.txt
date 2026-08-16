@@ -1,0 +1,3 @@
+Dataset Name: Social Network Ads
+Source: Kaggle
+URL: https://www.kaggle.com/datasets/rakeshrau/social-network-ads?resource=download
