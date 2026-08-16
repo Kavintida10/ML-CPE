@@ -1,4 +1,4 @@
-# LAB 02: Data Preprocessing & Feature Engineering
+# LAB02: Data Preprocessing & Feature Engineering
 
 **รายวิชา:** Machine Learning (04-624-201)  
 **ผู้จัดทำ:** นางสาวกวินธิดา สุขโฉม (รหัสนักศึกษา: 116710400602-4, Sec 2)  
