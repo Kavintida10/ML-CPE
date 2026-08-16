@@ -24,6 +24,6 @@
 ## 📁 โครงสร้างโปรเจกต์ (Project Structure)
 
 ```text
-ML-LAB03/
-├── ML-LAB-03.ipynb                 # Jupyter Notebook บันทึกขั้นตอนการทดลองและโค้ดทั้งหมด
+LAB03/
+├── LAB03.ipynb                 # Jupyter Notebook บันทึกขั้นตอนการทดลองและโค้ดทั้งหมด
 └── README.md                       # รายงานสรุปผลการทดลอง
