@@ -1,0 +1,7 @@
+Dataset: Cats-And-Dogs-Mini-Dataset / PetImages
+Link: https://www.kaggle.com/datasets/aleemaparakatta/cats-and-dogs-mini-dataset
+
+Instructions:
+Download and extract images into the 'PetImages/' directory:
+- PetImages/cats_set/
+- PetImages/dogs_set/
