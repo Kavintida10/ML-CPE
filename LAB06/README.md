@@ -23,6 +23,8 @@
 ---
 
 ## 📁 โครงสร้างโปรเจกต์ (Project Structure)
+
+```text
 LAB06-NN/
 ├── PetImages/
 │   ├── Cat/                           # โฟลเดอร์เก็บรูปภาพแมว (500 ไฟล์)
@@ -51,3 +53,4 @@ LAB06-NN/
 │       ├── y_val.npy                  # ข้อมูล Label สำหรับ Validation Set
 │       └── y_test.npy                 # ข้อมูล Label สำหรับ Test Set
 └── requirements.txt                   # รายการไลบรารีและแพ็กเกจที่ต้องใช้งาน
+```
