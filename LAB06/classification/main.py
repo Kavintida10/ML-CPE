@@ -25,7 +25,7 @@ def main():
     print("3. Splitting and saving data...")
     X_train, X_val, X_test, y_train, y_val, y_test = split_and_save_data(X, y, categories, output_dir)
     
-    # 4. โมเดลหลักตามผังอาจารย์ (Hidden Units: 128, 64 / Epochs: 30)
+    # 4. โมเดลหลัก (Hidden Units: 128, 64 / Epochs: 30)
     print("4. Training primary model...")
     main_model = build_nn_model(hidden_units=(128, 64), max_iter=30)
     main_model.fit(X_train, y_train)
