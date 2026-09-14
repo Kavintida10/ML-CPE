@@ -16,7 +16,6 @@ def test_random_samples(model, X_test, y_test, categories, output_dir="outputs")
         if preds[i] == y_test[idx]:
             correct_count += 1
             
-    # หัวข้อใหญ่ด้านบน
     plt.suptitle(f"Prediction: {correct_count}/4 correct", fontsize=16)
     
     for i, idx in enumerate(indices):
