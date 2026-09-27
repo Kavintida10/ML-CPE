@@ -27,20 +27,20 @@
 ```text
 LAB07-CNN/
 ├── PetImages/
-│   ├── Cat/                            # โฟลเดอร์เก็บรูปภาพแมว (500 ไฟล์)[cite: 1]
-│   └── Dog/                            # โฟลเดอร์เก็บรูปภาพสุนัข (500 ไฟล์)[cite: 1]
+│   ├── Cat/                            # โฟลเดอร์เก็บรูปภาพแมว (500 ไฟล์)
+│   └── Dog/                            # โฟลเดอร์เก็บรูปภาพสุนัข (500 ไฟล์)
 ├── classification/
-│   ├── data_loader.py                  # โหลดภาพจาก PetImages, ปรับขนาดเป็น 64x64 และจัดการไฟล์ที่เสียหาย[cite: 1]
+│   ├── data_loader.py                  # โหลดภาพจาก PetImages, ปรับขนาดเป็น 64x64 และจัดการไฟล์ที่เสียหาย
 │   ├── preprocessing.py                # ปรับสเกลข้อมูล (Normalize) ค่าพิกเซลให้อยู่ในช่วง 0-1
 │   ├── split_data.py                   # แบ่งชุดข้อมูลเป็น Train, Val, Test พร้อมบันทึกไฟล์ .npy
 │   ├── cnn_model.py                    # ออกแบบโครงสร้างโมเดล CNN (Conv2D, Pooling, Dense Layers)
 │   ├── evaluate.py                     # ประเมินผลความแม่นยำ สร้าง Confusion Matrix และกราฟ IEEE Style
-│   ├── test_cnn.py                     # สุ่มเลือกภาพจาก Test Set (แมว 2, หมา 2) ทดสอบและพล็อตผล[cite: 15]
+│   ├── test_cnn.py                     # สุ่มเลือกภาพจาก Test Set (แมว 2, หมา 2) ทดสอบและพล็อตผล
 │   ├── main.py                         # สคริปต์หลักสำหรับรัน Training Pipeline และเปรียบเทียบ Configs
 │   └── outputs/
 │       ├── confusion_matrix.png        # แผนภาพ Confusion Matrix แสดงความถูกต้องรายคลาส
 │       ├── prediction_sample.png       # ภาพตัวอย่างผลการทำนาย 4 รูป (แมว 2, หมา 2) พร้อมค่าความมั่นใจ
 │       ├── training_history.png        # กราฟแสดงแนวโน้ม Accuracy & Loss สไตล์เปเปอร์วิชาการ IEEE
-└── requirements.txt                    # รายการไลบรารีและแพ็กเกจที่ต้องใช้งาน (TensorFlow, OpenCV ฯลฯ)[cite: 1]
+└── requirements.txt                    # รายการไลบรารีและแพ็กเกจที่ต้องใช้งาน (TensorFlow, OpenCV ฯลฯ)
 ```
 
