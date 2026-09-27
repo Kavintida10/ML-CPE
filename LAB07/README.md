@@ -37,6 +37,7 @@ LAB07-CNN/
 │   ├── evaluate.py                     # ประเมินผลความแม่นยำ สร้าง Confusion Matrix และกราฟ IEEE Style
 │   ├── test_cnn.py                     # สุ่มเลือกภาพจาก Test Set (แมว 2, หมา 2) ทดสอบและพล็อตผล
 │   ├── main.py                         # สคริปต์หลักสำหรับรัน Training Pipeline และเปรียบเทียบ Configs
+│   ├── __pycache__/                    # โฟลเดอร์แคชไพธอน
 │   └── outputs/
 │       ├── confusion_matrix.png        # แผนภาพ Confusion Matrix แสดงความถูกต้องรายคลาส
 │       ├── prediction_sample.png       # ภาพตัวอย่างผลการทำนาย 4 รูป (แมว 2, หมา 2) พร้อมค่าความมั่นใจ
