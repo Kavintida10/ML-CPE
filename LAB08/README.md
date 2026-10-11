@@ -16,7 +16,7 @@
 - **Link:** [Kaggle - Flowers Recognition](https://www.kaggle.com/datasets/alxmamaev/flowers-recognition)
 - **จำนวนคลาส:** 5 ชนิด (Daisy, Dandelion, Rose, Sunflower, Tulip)
 - **จำนวนข้อมูล:** ภาพดอกไม้รวมประมาณ 4,317 ภาพ
-- **ขนาดข้อมูล:** ภาพสี RGB ปรับขนาดเป็น 128 × 128 พิกเซล (128 × 128 × 3 = 49,152 features) และปรับค่าพิกเซลให้อยู่ในช่วง 0–1 (Normalization)
+- **ขนาดข้อมูล:** ภาพสี RGB ปรับขนาดเป็น 128 × 128 พิกเซล ($128 \times 128 \times 3 = 49,152$ features) และปรับค่าพิกเซลให้อยู่ในช่วง 0–1 (Normalization)
 - **การแบ่งชุดข้อมูล (Data Split):**
   * Training Set: 70%
   * Validation Set: 15%
@@ -103,7 +103,20 @@ LAB08-DCNN/
 
 ---
 
-## 🖼️ ตัวอย่างผลการแสดงภาพ (Visualizations)
+### 3. ผลของโมเดลที่ดีที่สุด (MobileNet-V1)
+
+| คลาส | Precision | Recall | F1-score | Support |
+| :--- | :---: | :---: | :---: | :---: |
+| daisy | 0.91 | 0.93 | 0.92 | 115 |
+| dandelion | 0.90 | 0.92 | 0.91 | 158 |
+| rose | 0.84 | 0.79 | 0.81 | 117 |
+| sunflower | 0.92 | 0.91 | 0.91 | 110 |
+| tulip | 0.88 | 0.89 | 0.88 | 148 |
+| **Accuracy** | | | **0.8920** | **648** |
+
+---
+
+## 🖼️ แผนภาพผลลัพธ์และการทำนาย (Visualizations)
 
 ### ผลเปรียบเทียบประสิทธิภาพสถาปัตยกรรมโมเดล (IEEE Access Style)
 ![All Models Comparison](classification/outputs/all_models_comparison_paper.png)
@@ -111,5 +124,16 @@ LAB08-DCNN/
 ### ผลการเปรียบเทียบจำนวนรอบการฝึกสอน (Epochs Comparison)
 ![Epochs Comparison](classification/outputs/epochs_comparison.png)
 
+### Confusion Matrix (โมเดลที่ดีที่สุด: MobileNet-V1)
+![Confusion Matrix](classification/outputs/confusion_matrix_mobilenet_v1.png)
+
 ### ตัวอย่างการพยากรณ์รูปภาพดอกไม้ (Prediction Samples)
 ![Prediction Sample](classification/outputs/prediction_sample.png)
+
+---
+
+## 💡 ข้อสังเกตและวิจารณ์ผลการทดลอง (Discussion)
+- **โมเดลขนาดเล็กให้ผลลัพธ์ที่ดีกว่าในชุดข้อมูลจำกัด:** MobileNet-V1 และ EfficientNet-B0 ทำผลงานได้ดีกว่า VGG16 อย่างชัดเจน (~89% เทียบกับ ~77%) เนื่องจาก VGG16 มีขนาดพารามิเตอร์ที่ใหญ่มาก ต้องการข้อมูลปริมาณมหาศาลและรอบการเรียนรู้ที่สูงกว่าเพื่อปรับค่าน้ำหนัก
+- **คลาสที่จำแนกยากที่สุด:** คือกลุ่มดอกกุหลาบ (`rose`) และดอกทิวลิป (`tulip`) ซึ่งมีค่า F1-score ต่ำกว่าคลาสอื่น เนื่องจากรูปทรงของกลีบดอก ลักษณะสีสัน และมุมกล้องในชุดข้อมูลมีความใกล้เคียงกันสูง
+- **คลาสที่จำแนกได้แม่นยำที่สุด:** คือดอกทานตะวัน (`sunflower`) และดอกเดซี (`daisy`) เนื่องจากมีเอกลักษณ์ของเกสรและรูปทรงกลีบดอกที่โดดเด่นชัดเจน
+- **แนวโน้มการเกิด Overfitting ในรอบปลาย:** การฝึกสอนที่ 20 Epochs ทำให้ความแม่นยำบน Train Set สูงขึ้น แต่ Validation Loss เริ่มไม่ลดลงต่อและปรับตัวขึ้นเล็กน้อย แสดงให้เห็นว่าช่วงประมาณ 10–15 Epochs เป็นจุดที่เหมาะสมที่สุดสำหรับการหยุดฝึกสอน (Early Stopping)
