@@ -1,0 +1,7 @@
+name,epochs,imgsz,batch,device,seconds
+quick_test,1,320,16,CPU,204
+e5_s320_b16,5,320,16,CPU,572
+e10_s320_b16,10,320,16,CPU,1238
+e20_s320_b16,20,320,16,CPU,2721
+e10_s416_b16,10,416,16,CPU,2143
+e10_s320_b8,10,320,8,CPU,1334

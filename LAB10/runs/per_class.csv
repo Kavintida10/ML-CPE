@@ -1,0 +1,16 @@
+﻿run,class,precision,recall,AP50,AP50-95
+e10_s320_b16,with_mask,0.756,0.833,0.858,0.546
+e10_s320_b16,without_mask,0.631,0.541,0.579,0.344
+e10_s320_b16,mask_weared_incorrect,0.508,0.125,0.248,0.182
+e10_s320_b8,with_mask,0.765,0.842,0.859,0.55
+e10_s320_b8,without_mask,0.574,0.618,0.582,0.344
+e10_s320_b8,mask_weared_incorrect,0.867,0.25,0.348,0.243
+e10_s416_b16,with_mask,0.897,0.816,0.883,0.583
+e10_s416_b16,without_mask,0.863,0.622,0.746,0.459
+e10_s416_b16,mask_weared_incorrect,0.845,0.125,0.296,0.22
+e20_s320_b16,with_mask,0.852,0.824,0.881,0.573
+e20_s320_b16,without_mask,0.775,0.608,0.671,0.388
+e20_s320_b16,mask_weared_incorrect,0.549,0.381,0.491,0.355
+e5_s320_b16,with_mask,0.815,0.775,0.819,0.504
+e5_s320_b16,without_mask,0.634,0.42,0.498,0.302
+e5_s320_b16,mask_weared_incorrect,1.0,0.0,0.095,0.063
