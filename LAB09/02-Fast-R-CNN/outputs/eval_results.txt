@@ -1,0 +1,7 @@
+Fast R-CNN | IoU=0.5 | คะแนนขั้นต่ำสำหรับ P/R=0.5 | จำนวนรูป=128
+with_mask: AP=0.270 | Precision=0.477 | Recall=0.336 | GT=461
+without_mask: AP=0.198 | Precision=0.583 | Recall=0.189 | GT=74
+mask_weared_incorrect: AP=0.000 | Precision=0.000 | Recall=0.000 | GT=16
+รวม: Precision=0.484 | Recall=0.307
+mAP@0.5 = 0.156
+เวลารวม 177 วินาที (รันครั้งแรกรวมเวลา Selective Search ด้วย)
