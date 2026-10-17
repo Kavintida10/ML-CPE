@@ -1,0 +1,7 @@
+torch==2.14.1
+torchvision==0.29.1
+opencv-contrib-python==5.0.0.93
+scikit-learn
+joblib
+pillow
+numpy
