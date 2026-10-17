@@ -1,4 +1,4 @@
-# LAB09: Object Detection I — R-CNN และ Fast R-CNN สำหรับการตรวจจับหน้ากากอนามัย
+# LAB09: Object Detection I 
 
 **รายวิชา:** Machine Learning (Sec 2, 1/2569)  
 **ผู้จัดทำ:** นางสาวกวินธิดา สุขโฉม (รหัสนักศึกษา: 116710400602-4, Sec 2)  
