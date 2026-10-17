@@ -1,4 +1,4 @@
-# ML-10: Object Detection II — YOLO26n สำหรับการตรวจจับหน้ากากอนามัย
+# LAB10: Object Detection II 
 
 **รายวิชา:** Machine Learning (Sec 2, 1/2569)  
 **ผู้จัดทำ:** นางสาวกวินธิดา สุขโฉม (รหัสนักศึกษา: 116710400602-4, Sec 2)  
