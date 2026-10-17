@@ -12,7 +12,7 @@
 ---
 
 ## 📁 แหล่งที่มาของข้อมูล (Dataset)
-- **Dataset:** Face Mask Detection (โดย andrewmvd) ชุดเดียวกับ ML-09
+- **Dataset:** Face Mask Detection 
 - **Link:** [Kaggle - Face Mask Detection](https://www.kaggle.com/datasets/andrewmvd/face-mask-detection)
 - **ใบอนุญาต:** CC0: Public Domain
 - **จำนวนคลาส:** 3 คลาส (`with_mask`, `without_mask`, `mask_weared_incorrect`)
